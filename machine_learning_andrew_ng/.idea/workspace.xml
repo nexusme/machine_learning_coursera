@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="721bb8ed-aebe-4333-805a-c47b4cde9143" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ff30dFdcpllDDrwmvRdFeaRtbv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.ml_ex3_Neural_Networks">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ml_ex1_linear regression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="machine_learning_andrew_ng" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml_ex1_linear regression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ml_ex2_logistic_Regression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="machine_learning_andrew_ng" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml_ex2_logistic_Regression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ml_ex2_regularized_logistic_regression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="machine_learning_andrew_ng" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml_ex2_regularized_logistic_regression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ml_ex3_Multiclass_Classification" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="machine_learning_andrew_ng" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml_ex3_Multiclass_Classification.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ml_ex3_Neural_Networks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="machine_learning_andrew_ng" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml_ex3_Neural_Networks.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ml_ex3_Neural_Networks" />
+        <item itemvalue="Python.ml_ex3_Multiclass_Classification" />
+        <item itemvalue="Python.ml_ex1_linear regression" />
+        <item itemvalue="Python.ml_ex2_regularized_logistic_regression" />
+        <item itemvalue="Python.ml_ex2_logistic_Regression" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="721bb8ed-aebe-4333-805a-c47b4cde9143" name="Default Changelist" comment="" />
+      <created>1596595097939</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596595097939</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="95" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597459671843">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="184" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.821@0.23.1440.821" timestamp="1597459671843" />
+    <state x="184" y="95" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.822@0.23.1440.822" timestamp="1596595660379" />
+    <state x="425" y="243" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597906517279">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="425" y="243" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.821@0.23.1440.821" timestamp="1597906517279" />
+    <state width="1419" height="164" key="GridCell.Tab.0.bottom" timestamp="1599125189192">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state width="1419" height="164" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1599125189192" />
+    <state width="1419" height="164" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1598433952347" />
+    <state width="1419" height="229" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1598321405495" />
+    <state width="1419" height="164" key="GridCell.Tab.0.center" timestamp="1599125189191">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state width="1419" height="164" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1599125189191" />
+    <state width="1419" height="164" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1598433952347" />
+    <state width="1419" height="229" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1598321405494" />
+    <state width="1419" height="164" key="GridCell.Tab.0.left" timestamp="1599125189191">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state width="1419" height="164" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1599125189191" />
+    <state width="1419" height="164" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1598433952346" />
+    <state width="1419" height="229" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1598321405494" />
+    <state width="1419" height="164" key="GridCell.Tab.0.right" timestamp="1599125189192">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state width="1419" height="164" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1599125189192" />
+    <state width="1419" height="164" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1598433952347" />
+    <state width="1419" height="229" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1598321405494" />
+    <state x="348" y="37" key="SettingsEditor" timestamp="1597751225505">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="348" y="37" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1597751225505" />
+    <state x="397" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1599111864095">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="397" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.821@0.23.1440.821" timestamp="1599111864095" />
+    <state x="397" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.822@0.23.1440.822" timestamp="1598405181043" />
+    <state x="385" y="170" width="670" height="676" key="search.everywhere.popup" timestamp="1599124688939">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="385" y="170" width="670" height="676" key="search.everywhere.popup/0.23.1440.821@0.23.1440.821" timestamp="1599124688939" />
+    <state x="385" y="170" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1597627572439" />
+    <state x="385" y="170" width="670" height="676" key="search.everywhere.popup/0.23.1440.823@0.23.1440.823" timestamp="1596705110870" />
+  </component>
+</project>
