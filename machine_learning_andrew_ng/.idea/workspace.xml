@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="721bb8ed-aebe-4333-805a-c47b4cde9143" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ex4data1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex4weights.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ml_ex4_Neural_Networks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/machine_learning_andrew_ng.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/machine_learning_andrew_ng.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_ex4_Neural_Networks.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_ex4_Neural_Networks.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,27 +83,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ml_ex2_regularized_logistic_regression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="machine_learning_andrew_ng" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml_ex2_regularized_logistic_regression.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="ml_ex3_Multiclass_Classification" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="machine_learning_andrew_ng" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,20 +146,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="testt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="machine_learning_andrew_ng" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.ml_ex1_linear regression" />
-      <item itemvalue="Python.ml_ex2_regularized_logistic_regression" />
       <item itemvalue="Python.ml_ex3_Multiclass_Classification" />
       <item itemvalue="Python.ml_ex3_Neural_Networks" />
       <item itemvalue="Python.ml_ex4_Neural_Networks" />
+      <item itemvalue="Python.testt" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.ml_ex4_Neural_Networks" />
+        <item itemvalue="Python.testt" />
         <item itemvalue="Python.ml_ex3_Neural_Networks" />
         <item itemvalue="Python.ml_ex3_Multiclass_Classification" />
         <item itemvalue="Python.ml_ex1_linear regression" />
-        <item itemvalue="Python.ml_ex2_regularized_logistic_regression" />
       </list>
     </recent_temporary>
   </component>
@@ -223,29 +219,29 @@
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="425" y="243" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.821@0.23.1440.821" timestamp="1597906517279" />
-    <state width="1419" height="240" key="GridCell.Tab.0.bottom" timestamp="1599551581956">
+    <state width="1419" height="240" key="GridCell.Tab.0.bottom" timestamp="1599630041197">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state width="1419" height="240" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1599551581956" />
-    <state width="1419" height="164" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1598433952347" />
+    <state width="1419" height="240" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1599630041197" />
+    <state width="1419" height="240" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1599621947772" />
     <state width="1419" height="229" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1598321405495" />
-    <state width="1419" height="240" key="GridCell.Tab.0.center" timestamp="1599551581955">
+    <state width="1419" height="240" key="GridCell.Tab.0.center" timestamp="1599630041197">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state width="1419" height="240" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1599551581955" />
-    <state width="1419" height="164" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1598433952347" />
+    <state width="1419" height="240" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1599630041197" />
+    <state width="1419" height="240" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1599621947771" />
     <state width="1419" height="229" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1598321405494" />
-    <state width="1419" height="240" key="GridCell.Tab.0.left" timestamp="1599551581955">
+    <state width="1419" height="240" key="GridCell.Tab.0.left" timestamp="1599630041197">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state width="1419" height="240" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1599551581955" />
-    <state width="1419" height="164" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1598433952346" />
+    <state width="1419" height="240" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1599630041197" />
+    <state width="1419" height="240" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1599621947771" />
     <state width="1419" height="229" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1598321405494" />
-    <state width="1419" height="240" key="GridCell.Tab.0.right" timestamp="1599551581956">
+    <state width="1419" height="240" key="GridCell.Tab.0.right" timestamp="1599630041197">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state width="1419" height="240" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1599551581956" />
-    <state width="1419" height="164" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1598433952347" />
+    <state width="1419" height="240" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1599630041197" />
+    <state width="1419" height="240" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1599621947771" />
     <state width="1419" height="229" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1598321405494" />
     <state x="348" y="37" key="SettingsEditor" timestamp="1599529835716">
       <screen x="0" y="23" width="1440" height="821" />

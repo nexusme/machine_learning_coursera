@@ -51,8 +51,7 @@ def sigmoid(z):
 
 
 def sigmoid_gradient(z):
-    print(sigmoid(z) * (1 - sigmoid(z)))
-    return sigmoid(z) * (1 - sigmoid(z))
+    return np.multiply(sigmoid(z), (1 - sigmoid(z)))
 
 
 def forward_propagate(m_in, X, theta1, theta2):
@@ -89,7 +88,6 @@ def nnCostFunction(nn_params, input_size, hidden_size, label_num, X_in, y_in, la
         second_term = (1 - y_fi[i, :]) @ np.log(1 - h[i, :])
         J += np.sum(first_term - second_term)
     J = J / m
-    print(J)
     return J
 
 
@@ -115,7 +113,6 @@ def nnCostFunctionReg(nn_params, input_size, hidden_size, label_num, X_in, y_in,
 
     # add the cost regularization term
     reg = (float(lambda_in) / (2 * m)) * (np.sum(np.power(theta_1[:, 1:], 2)) + np.sum(np.power(theta_2[:, 1:], 2)))
-    print(J + reg)
     return J + reg
 
 
@@ -141,15 +138,96 @@ def back_prop(nn_params, input_size, hidden_size, label_num, X_in, y_in, lambda_
 
     # compute the cost
     J = 0
+    delta1 = np.zeros(theta_1.shape)  # (25, 401)
+    delta2 = np.zeros(theta_2.shape)  # (10, 26)
+
     for i in range(m):
         first_term = -y_fi[i, :] @ np.log(h[i, :])
         second_term = (1 - y_fi[i, :]) @ np.log(1 - h[i, :])
         J += np.sum(first_term - second_term)
     J = J / m
 
-    print(J)
+    # back prop
+    for t in range(m):
+        # a_1 = np.mat(a_1)
+        a1t = np.mat(a_1[t, :])  # (1, 401)
+        z2t = np.mat(z_2[t, :])  # (1, 25)
+        a2t = np.mat(a_2[t, :])  # (1, 26)
+        ht = np.mat(h[t, :])  # (1, 10)
+        yt = np.mat(y_fi[t, :])  # (1, 10)
 
-    return J
+        d3t = ht - yt  # (1, 10)
+        z2t = np.insert(z2t, 0, values=np.ones(1))  # (1, 26)
+
+        gz = sigmoid_gradient(z2t)
+        d2t = np.multiply((theta_2.T * d3t.T).T, gz)  # (1, 26)
+
+        delta1 = delta1 + (d2t[:, 1:]).T * a1t
+        delta2 = delta2 + d3t.T * a2t
+
+    delta1 = delta1 / m
+    delta2 = delta2 / m
+    return J, delta1, delta2
+
+
+# 反向传播正则化
+def back_prop_reg(nn_params, input_size, hidden_size, label_num, X_in, y_in, lambda_in):
+    m = len(X_in)
+
+    y_fi = encode_y(y_in)
+
+    theta_1 = nn_params[:hidden_size * (input_size + 1)].reshape(hidden_size, input_size + 1)
+
+    theta_2 = nn_params[hidden_size * (input_size + 1):].reshape(num_labels, hidden_size + 1)
+
+    a_1, z_2, a_2, z_3, h = forward_propagate(m, X_in, theta_1, theta_2)
+
+    # compute the cost
+    J = 0
+    delta1 = np.zeros(theta_1.shape)  # (25, 401)
+    delta2 = np.zeros(theta_2.shape)  # (10, 26)
+
+    for i in range(m):
+        first_term = -y_fi[i, :] @ np.log(h[i, :])
+        second_term = (1 - y_fi[i, :]) @ np.log(1 - h[i, :])
+        J += np.sum(first_term - second_term)
+    J = J / m
+
+    # back prop
+    for t in range(m):
+        # a_1 = np.mat(a_1)
+        a1t = np.mat(a_1[t, :])  # (1, 401)
+        z2t = np.mat(z_2[t, :])  # (1, 25)
+        a2t = np.mat(a_2[t, :])  # (1, 26)
+        ht = np.mat(h[t, :])  # (1, 10)
+        yt = np.mat(y_fi[t, :])  # (1, 10)
+
+        d3t = ht - yt  # (1, 10)
+        z2t = np.insert(z2t, 0, values=np.ones(1))  # (1, 26)
+
+        gz = sigmoid_gradient(z2t)
+        d2t = np.multiply((theta_2.T * d3t.T).T, gz)  # (1, 26)
+
+        delta1 = delta1 + (d2t[:, 1:]).T * a1t
+        delta2 = delta2 + d3t.T * a2t
+
+    delta1 = delta1 / m
+    delta2 = delta2 / m
+    # add the gradient regularization term
+    delta1[:, 1:] = delta1[:, 1:] + (theta_1[:, 1:] * lambda_in) / m
+    delta2[:, 1:] = delta2[:, 1:] + (theta_2[:, 1:] * lambda_in) / m
+
+    # unravel the gradient matrices into a single array
+    grad = np.concatenate((np.ravel(delta1), np.ravel(delta2)))
+    return J, grad
+
+
+def pre_accuracy(X, y, theta1, theta2):
+    a1, z2, a2, z3, h = forward_propagate(len(X), X, theta1, theta2)
+    y_pre = np.array(np.argmax(h, axis=1) + 1)
+    correct = [1 if a == b else 0 for (a, b) in zip(y_pre, y)]
+    accuracy = (sum(map(int, correct)) / float(len(correct)))
+    print('accuracy = {0}%'.format(accuracy * 100))
 
 
 if __name__ == "__main__":
@@ -161,9 +239,26 @@ if __name__ == "__main__":
     load_theta_and_unroll(path2)
 
     data_X, data_y = load_data(path1)
+
+    paras = rand_ini_para(hidden_layer_size, input_layer_size)
+
     # plot_100_images(data_X, data_y)
     nn_theta = load_theta_and_unroll(path2)
 
     # nnCostFunctionReg(nn_theta, input_layer_size, hidden_layer_size, num_labels, data_X, data_y, lambda_t)
-
     # sigmoid_gradient(0)
+    # back_prop(nn_theta, input_layer_size, hidden_layer_size, num_labels, data_X, data_y, lambda_t)
+    Cost, grad_result = back_prop_reg(nn_theta, input_layer_size, hidden_layer_size, num_labels, data_X, data_y,
+                                      lambda_t)
+
+    # minimize the objective function
+    fmin = minimize(fun=back_prop_reg, x0=paras,
+                    args=(input_layer_size, hidden_layer_size, num_labels, data_X, data_y, lambda_t),
+                    method='TNC', jac=True, options={'maxiter': 250})
+
+    theta_final_1 = np.mat(
+        np.reshape(fmin.x[:hidden_layer_size * (input_layer_size + 1)], (hidden_layer_size, (input_layer_size + 1))))
+    theta_final_2 = np.mat(
+        np.reshape(fmin.x[hidden_layer_size * (input_layer_size + 1):], (num_labels, (hidden_layer_size + 1))))
+
+    pre_accuracy(data_X, data_y, theta_final_1, theta_final_2)
