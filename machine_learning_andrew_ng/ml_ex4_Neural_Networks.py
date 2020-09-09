@@ -198,7 +198,8 @@ def back_prop_reg(nn_params, input_size, hidden_size, label_num, X_in, y_in, lam
         second_term = (1 - y_fi[i, :]) @ np.log(1 - h[i, :])
         J += np.sum(first_term - second_term)
     J = J / m
-
+    reg = (float(lambda_in) / (2 * m)) * (np.sum(np.power(theta_1[:, 1:], 2)) + np.sum(np.power(theta_2[:, 1:], 2)))
+    J = J+reg
     # back prop
     for t in range(m):
         # a_1 = np.mat(a_1)
