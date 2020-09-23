@@ -9,4 +9,4 @@ import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 import random
 
-path1 = 'ex7data1.mat'
+path1 = '../files/ex7data1.mat'

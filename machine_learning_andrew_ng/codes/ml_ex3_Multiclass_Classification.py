@@ -5,7 +5,7 @@ from scipy.io import loadmat
 import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 
-path1 = 'ex3data1.mat'
+path1 = '../files/ex3data1.mat'
 
 
 #  load mat data

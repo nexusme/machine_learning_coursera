@@ -11,7 +11,7 @@ import numpy as np
 
 
 # file name
-csv_file = 'ex1data1.txt'
+csv_file = '../files/ex1data1.txt'
 # set ite and alpha
 iterations = 1500
 alpha = 0.01

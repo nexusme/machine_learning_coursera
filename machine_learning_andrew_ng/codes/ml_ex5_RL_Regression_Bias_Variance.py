@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 import random
 
-path1 = 'ex5data1.mat'
+path1 = '../files/ex5data1.mat'
 
 
 #  load mat data

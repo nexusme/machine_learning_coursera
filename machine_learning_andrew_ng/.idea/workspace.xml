@@ -2,9 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="721bb8ed-aebe-4333-805a-c47b4cde9143" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ml_ex7_PCA.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_ex7_KC_and_PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_ex7_KC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird_small.png" beforeDir="false" afterPath="$PROJECT_DIR$/files/bird_small.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailSample1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/emailSample1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex1data1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/ex1data1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex2data1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/ex2data1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex2data2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/ex2data2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex3data1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/files/ex3data1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex3weights.mat" beforeDir="false" afterPath="$PROJECT_DIR$/files/ex3weights.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex4data1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/files/ex4data1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex4weights.mat" beforeDir="false" afterPath="$PROJECT_DIR$/files/ex4weights.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex5data1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/files/ex5data1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex6data1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/files/ex6data1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex6data2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/files/ex6data2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex6data3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/files/ex6data3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex7data1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/files/ex7data1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex7data2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/files/ex7data2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_ex1_linear_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/ml_ex1_linear_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_ex2_logistic_Regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/ml_ex2_logistic_Regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_ex2_regularized_logistic_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/ml_ex2_regularized_logistic_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_ex3_Multiclass_Classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/ml_ex3_Multiclass_Classification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_ex3_Neural_Networks.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/ml_ex3_Neural_Networks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_ex4_Neural_Networks.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/ml_ex4_Neural_Networks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_ex5_RL_Regression_Bias_Variance.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/ml_ex5_RL_Regression_Bias_Variance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_ex6_Spam_Classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/ml_ex6_Spam_Classification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_ex6_Support_Vector_Machines.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/ml_ex6_Support_Vector_Machines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_ex7_KC.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/ml_ex7_KC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_ex7_PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/ml_ex7_PCA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mountains.csv" beforeDir="false" afterPath="$PROJECT_DIR$/files/mountains.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/quotes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spamTest.mat" beforeDir="false" afterPath="$PROJECT_DIR$/files/spamTest.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spamTrain.mat" beforeDir="false" afterPath="$PROJECT_DIR$/files/spamTrain.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vocab.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/vocab.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +65,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/codes" />
+      <recent name="$PROJECT_DIR$/files" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ml_ex7_KC_and_PCA">
+  <component name="RunManager" selected="Python.ml_ex1_linear_regression">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -63,7 +95,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ml_ex5_RL_Regression_Bias_Variance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ml_ex1_linear_regression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="machine_learning_andrew_ng" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -71,11 +103,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codes" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml_ex5_RL_Regression_Bias_Variance.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/ml_ex1_linear_regression.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -96,7 +128,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml_ex6_Spam_Classification.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/ml_ex6_Spam_Classification.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -117,7 +149,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml_ex6_Support_Vector_Machines.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/ml_ex6_Support_Vector_Machines.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,7 +170,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml_ex7_KC.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/ml_ex7_KC.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,7 +191,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,19 +201,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.ml_ex5_RL_Regression_Bias_Variance" />
       <item itemvalue="Python.ml_ex6_Spam_Classification" />
       <item itemvalue="Python.ml_ex6_Support_Vector_Machines" />
       <item itemvalue="Python.ml_ex7_KC_and_PCA" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.ml_ex1_linear_regression" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ml_ex1_linear_regression" />
         <item itemvalue="Python.ml_ex7_KC_and_PCA" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.ml_ex6_Spam_Classification" />
         <item itemvalue="Python.ml_ex6_Support_Vector_Machines" />
-        <item itemvalue="Python.ml_ex5_RL_Regression_Bias_Variance" />
       </list>
     </recent_temporary>
   </component>
@@ -220,28 +252,28 @@
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="425" y="243" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.821@0.23.1440.821" timestamp="1597906517279" />
-    <state width="1419" height="214" key="GridCell.Tab.0.bottom" timestamp="1600843386544">
+    <state width="1419" height="214" key="GridCell.Tab.0.bottom" timestamp="1600843831587">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state width="1419" height="214" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1600843386544" />
+    <state width="1419" height="214" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1600843831587" />
     <state width="1419" height="214" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1600842160245" />
     <state width="1419" height="216" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1599808227324" />
-    <state width="1419" height="214" key="GridCell.Tab.0.center" timestamp="1600843386543">
+    <state width="1419" height="214" key="GridCell.Tab.0.center" timestamp="1600843831587">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state width="1419" height="214" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1600843386543" />
+    <state width="1419" height="214" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1600843831587" />
     <state width="1419" height="214" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1600842160244" />
     <state width="1419" height="216" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1599808227323" />
-    <state width="1419" height="214" key="GridCell.Tab.0.left" timestamp="1600843386543">
+    <state width="1419" height="214" key="GridCell.Tab.0.left" timestamp="1600843831586">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state width="1419" height="214" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1600843386543" />
+    <state width="1419" height="214" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1600843831586" />
     <state width="1419" height="214" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1600842160244" />
     <state width="1419" height="216" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1599808227323" />
-    <state width="1419" height="214" key="GridCell.Tab.0.right" timestamp="1600843386543">
+    <state width="1419" height="214" key="GridCell.Tab.0.right" timestamp="1600843831587">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state width="1419" height="214" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1600843386543" />
+    <state width="1419" height="214" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1600843831587" />
     <state width="1419" height="214" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1600842160244" />
     <state width="1419" height="216" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1599808227323" />
     <state x="348" y="37" key="SettingsEditor" timestamp="1600776306449">

@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 import random
 
-path1 = 'ex3weights.mat'
-path2 = 'ex3data1.mat'
+path1 = '../files/ex3weights.mat'
+path2 = '../files/ex3data1.mat'
 
 
 #  load mat data

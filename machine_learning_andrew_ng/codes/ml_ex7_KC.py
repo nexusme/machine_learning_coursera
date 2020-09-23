@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 import random
 
-path1 = 'ex7data2.mat'
-path2 = 'bird_small.png'
+path1 = '../files/ex7data2.mat'
+path2 = '../files/bird_small.png'
 
 
 def read_data(path):

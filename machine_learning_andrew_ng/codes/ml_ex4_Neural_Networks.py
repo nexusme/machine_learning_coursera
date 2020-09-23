@@ -8,9 +8,9 @@ import random
 
 from sklearn.preprocessing import OneHotEncoder
 
-path1 = 'ex4data1.mat'
+path1 = '../files/ex4data1.mat'
 
-path2 = 'ex4weights.mat'
+path2 = '../files/ex4weights.mat'
 
 
 #  load mat data and unroll

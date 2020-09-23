@@ -9,9 +9,9 @@ import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 import random
 
-path1 = 'ex6data1.mat'
-path2 = 'ex6data2.mat'
-path3 = 'ex6data3.mat'
+path1 = '../files/ex6data1.mat'
+path2 = '../files/ex6data2.mat'
+path3 = '../files/ex6data3.mat'
 
 
 def read_data(path):

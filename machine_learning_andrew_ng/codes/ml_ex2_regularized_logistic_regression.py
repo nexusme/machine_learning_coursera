@@ -10,7 +10,7 @@ from pandas.core.frame import DataFrame
 import numpy as np
 
 # file name
-csv_file = 'ex2data2.txt'
+csv_file = '../files/ex2data2.txt'
 
 
 # read file

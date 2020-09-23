@@ -12,7 +12,7 @@ import scipy.optimize as op
 
 
 # file name
-csv_file = 'ex2data1.txt'
+csv_file = '../files/ex2data1.txt'
 
 
 # read file

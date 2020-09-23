@@ -15,10 +15,10 @@ from scipy.io import loadmat
 #   8. Removal of non-words: 移除所有非文字类型，所有的空格(tabs, newlines, spaces)调整为一个空格.
 from sklearn import svm
 
-path1 = 'emailSample1.txt'
-path2 = 'vocab.txt'
-path3 = 'spamTrain.mat'
-path4 = 'spamTest.mat'
+path1 = '../files/emailSample1.txt'
+path2 = '../files/vocab.txt'
+path3 = '../files/spamTrain.mat'
+path4 = '../files/spamTest.mat'
 
 
 # read csv file and save, para:file name, return x, y
