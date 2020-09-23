@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="721bb8ed-aebe-4333-805a-c47b4cde9143" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ml_ex7_PCA.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_ex7_KC_and_PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_ex7_KC_and_PCA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_ex7_KC_and_PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_ex7_KC.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ml_ex7_KC_and_PCA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ml_ex7_KC" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="machine_learning_andrew_ng" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,7 +138,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml_ex7_KC_and_PCA.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml_ex7_KC.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -220,28 +220,28 @@
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="425" y="243" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.821@0.23.1440.821" timestamp="1597906517279" />
-    <state width="1419" height="214" key="GridCell.Tab.0.bottom" timestamp="1600843334187">
+    <state width="1419" height="214" key="GridCell.Tab.0.bottom" timestamp="1600843386544">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state width="1419" height="214" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1600843334187" />
+    <state width="1419" height="214" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1600843386544" />
     <state width="1419" height="214" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1600842160245" />
     <state width="1419" height="216" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1599808227324" />
-    <state width="1419" height="214" key="GridCell.Tab.0.center" timestamp="1600843334186">
+    <state width="1419" height="214" key="GridCell.Tab.0.center" timestamp="1600843386543">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state width="1419" height="214" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1600843334186" />
+    <state width="1419" height="214" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1600843386543" />
     <state width="1419" height="214" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1600842160244" />
     <state width="1419" height="216" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1599808227323" />
-    <state width="1419" height="214" key="GridCell.Tab.0.left" timestamp="1600843334186">
+    <state width="1419" height="214" key="GridCell.Tab.0.left" timestamp="1600843386543">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state width="1419" height="214" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1600843334186" />
+    <state width="1419" height="214" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1600843386543" />
     <state width="1419" height="214" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1600842160244" />
     <state width="1419" height="216" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1599808227323" />
-    <state width="1419" height="214" key="GridCell.Tab.0.right" timestamp="1600843334187">
+    <state width="1419" height="214" key="GridCell.Tab.0.right" timestamp="1600843386543">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state width="1419" height="214" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1600843334187" />
+    <state width="1419" height="214" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1600843386543" />
     <state width="1419" height="214" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1600842160244" />
     <state width="1419" height="216" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1599808227323" />
     <state x="348" y="37" key="SettingsEditor" timestamp="1600776306449">
