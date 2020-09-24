@@ -10,11 +10,13 @@ from scipy.optimize import minimize
 import random
 
 path1 = '../files/ex7data1.mat'
+path2 = '../files/ex7faces.mat'
 
 
 def read_data(path):
     data = loadmat(path)
     data_x = data['X']
+    print(data_x.shape)
     return data_x
 
 
@@ -56,10 +58,68 @@ def plot_computed_eigen_vectors(X_in, mean, s_in, u_in):  # 画出协方差
     plt.show()
 
 
+# Projecting the data onto the principal components
+def project_data(X_norm_in, U_in, K_in):
+    z = X_norm_in @ U_in[:, :K_in]
+    return z
+
+
+# Recovers an approximation of the original data when using the projected data
+def recover_data(Z_in, U_in, K_in):
+    recovered = Z_in @ U_in[:, :K_in].T
+    return recovered
+
+
+# Visualizing the projections
+def plot_projections(X_norm_in, X_rec_in):
+    X_rec_in = np.array(X_rec_in)
+    plt.figure(figsize=(7, 5))
+    plt.axis("equal")
+    plt.scatter(X_norm_in[:, 0], X_norm_in[:, 1], s=30, facecolors='none',
+                edgecolors='b', label='Original Data Points')
+    plt.scatter(X_rec_in[:, 0], X_rec_in[:, 1], s=30, facecolors='none',
+                edgecolors='r', label='PCA Reduced Data Points')
+
+    plt.title("Example Dataset: Reduced Dimension Points Shown", fontsize=14)
+    plt.xlabel('x1 [Feature Normalized]', fontsize=14)
+    plt.ylabel('x2 [Feature Normalized]', fontsize=14)
+    plt.grid(True)
+
+    for x in range(X_norm_in.shape[0]):
+        plt.plot([X_norm_in[x, 0], X_rec_in[x, 0]], [X_norm_in[x, 1], X_rec_in[x, 1]], 'k--')
+        # 输入第一项全是X坐标，第二项都是Y坐标
+    plt.legend()
+    plt.show()
+
+
+def display_face(X_in, row, col):
+    fig, axs = plt.subplots(row, col, figsize=(8, 8))
+    for r in range(row):
+        for c in range(col):
+            axs[r][c].imshow(X_in[r * col + c].reshape(32, 32).T, cmap='Greys_r')
+            axs[r][c].set_xticks([])
+            axs[r][c].set_yticks([])
+    plt.show()
+
+
 if __name__ == '__main__':
     X = read_data(path1)
     # plot_data(X)
     X_norm, means, stds = feature_normalize(X)  # 50,2
     U_out, S_out, V_out = pca(X_norm)  # 带入规范化值X_norm
     # plot_computed_eigen_vectors(X, means, S_out, U_out)
-    plot_data(X_norm)
+    # plot_data(X_norm)
+    Z = project_data(X_norm, U_out, 1)
+    X_rec = recover_data(Z, U_out, 1)
+    # plot_projections(X_norm, X_rec)
+
+    data_face = read_data(path2)
+
+    # display_face(data_face, 10, 10) # display faces
+
+    # PCA
+    X_norm_face, means_face, stds_face = feature_normalize(data_face)
+    U_face, S_face, V_face = pca(X_norm_face)
+    Z_face = project_data(X_norm_face, U_face, 36)  # projection
+    X_rec_face = recover_data(Z_face, U_face, 36)  # recover data
+    display_face(X_rec_face, 10, 10)  # plot faces
