@@ -1,0 +1,59 @@
+import pandas as pd
+import scipy
+import sklearn
+from skimage import io
+from sklearn import svm
+import numpy as np
+from scipy.io import loadmat
+import matplotlib.pyplot as plt
+from scipy.optimize import minimize
+import random
+
+path1 = '../files/ex8_movies.mat'
+
+path2 = '../files/ex8_movieParams.mat'
+
+
+def read_data(path):
+    data = loadmat(path)
+    data_Y = data['Y']  # num_movies × num_users_matrix
+    data_R = data['R']  # R(i, j) = 1 if user j gave a rating to movie i,
+    return data_Y, data_R
+
+
+def read_para(path):
+    data = loadmat(path)
+    data_X = data['X']
+    data_theta = data['Theta']
+    data_num_users = data['num_users']  # 用户数943
+    data_num_movies = data['num_movies']  # 电影数1682
+    data_num_features = data['num_features']  # 特征10
+
+    return data_X, data_theta, data_num_users, data_num_movies, data_num_features
+
+
+def cofi_cost(params, Y_in, R_in, num_users_in, num_movies_in, num_features_in, lambda_in):
+    X_c = params[:num_movies_in * num_features_in].reshape(num_movies_in, num_features_in)  # 5*3
+    theta_c = params[num_movies_in * num_features_in:].reshape(num_users_in, num_features_in)  # 4*3
+
+    part1 = np.sum(((X_c @ theta_c.T - Y_in) ** 2) * R_in) / 2
+    part2 = lambda_in * np.sum(np.power(theta_c, 2)) / 2
+    part3 = lambda_in * np.sum(np.power(X_c, 2)) / 2
+    print(part1 + part2 + part3)
+    return part1 + part2 + part3
+
+
+if __name__ == '__main__':
+    Y, R = read_data(path1)  # Y评分表: 1682*943 R用户是否评分: 1682x943
+    X, theta, num_users, num_movies, num_features = read_para(path2)
+
+    num_users_t = 4
+    num_movies_t = 5
+    num_features_t = 3
+
+    X = X[0:num_movies_t, 0: num_features_t]  # 5*3 测试集 num_movies  x num_features matrix of movie features
+    theta = theta[0:num_users_t, 0:num_features_t]  # 每个用户的theta4*3
+    Y = Y[0:num_movies_t, 0: num_users_t]  # 评分表5*4
+    R = R[0:num_movies_t, 0: num_users_t]  # 是否评分5*4
+
+    cofi_cost(np.r_[X.flatten(), theta.flatten()], Y, R, num_users_t, num_movies_t, num_features_t, 1.5)

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="721bb8ed-aebe-4333-805a-c47b4cde9143" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/codes/ml_ex8_Anomaly_detection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/ex8data1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/ex8data2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codes/ml_ex8_Recommender_Systems.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/ex8_movieParams.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/ex8_movies.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,10 +43,11 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/files" />
+      <recent name="$PROJECT_DIR$/codes" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ml_ex8_Anomaly_detection">
+  <component name="RunManager" selected="Python.ml_ex8_Recommender_Systems">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -81,27 +82,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/ml_ex1_linear_regression.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ml_ex6_Spam_Classification" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="machine_learning_andrew_ng" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/ml_ex6_Spam_Classification.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,6 +132,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ml_ex8_Recommender_Systems" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="machine_learning_andrew_ng" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/ml_ex8_Recommender_Systems.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="machine_learning_andrew_ng" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,19 +175,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.ml_ex6_Spam_Classification" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.ml_ex1_linear_regression" />
       <item itemvalue="Python.ml_ex7_PCA" />
       <item itemvalue="Python.ml_ex8_Anomaly_detection" />
+      <item itemvalue="Python.ml_ex8_Recommender_Systems" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ml_ex8_Recommender_Systems" />
         <item itemvalue="Python.ml_ex8_Anomaly_detection" />
         <item itemvalue="Python.ml_ex7_PCA" />
         <item itemvalue="Python.ml_ex1_linear_regression" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.ml_ex6_Spam_Classification" />
       </list>
     </recent_temporary>
   </component>
@@ -221,32 +222,33 @@
     </state>
     <state x="184" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.821@0.23.1440.821" timestamp="1599529804331" />
     <state x="184" y="95" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.822@0.23.1440.822" timestamp="1596595660379" />
-    <state x="425" y="243" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597906517279">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state x="425" y="243" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601271220785">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="425" y="243" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.821@0.23.1440.821" timestamp="1597906517279" />
-    <state width="1419" height="223" key="GridCell.Tab.0.bottom" timestamp="1601263859019">
+    <state x="425" y="243" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.822@0.23.1440.822" timestamp="1601271220785" />
+    <state width="1419" height="239" key="GridCell.Tab.0.bottom" timestamp="1601295675725">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state width="1419" height="223" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1601263859019" />
+    <state width="1419" height="239" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1601295675725" />
     <state width="1419" height="199" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1601207691628" />
     <state width="1419" height="216" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1599808227324" />
-    <state width="1419" height="223" key="GridCell.Tab.0.center" timestamp="1601263859019">
+    <state width="1419" height="239" key="GridCell.Tab.0.center" timestamp="1601295675724">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state width="1419" height="223" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1601263859019" />
+    <state width="1419" height="239" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1601295675724" />
     <state width="1419" height="199" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1601207691627" />
     <state width="1419" height="216" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1599808227323" />
-    <state width="1419" height="223" key="GridCell.Tab.0.left" timestamp="1601263859018">
+    <state width="1419" height="239" key="GridCell.Tab.0.left" timestamp="1601295675724">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state width="1419" height="223" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1601263859018" />
+    <state width="1419" height="239" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1601295675724" />
     <state width="1419" height="199" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1601207691626" />
     <state width="1419" height="216" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1599808227323" />
-    <state width="1419" height="223" key="GridCell.Tab.0.right" timestamp="1601263859019">
+    <state width="1419" height="239" key="GridCell.Tab.0.right" timestamp="1601295675724">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state width="1419" height="223" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1601263859019" />
+    <state width="1419" height="239" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1601295675724" />
     <state width="1419" height="199" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1601207691627" />
     <state width="1419" height="216" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1599808227323" />
     <state x="348" y="37" key="SettingsEditor" timestamp="1600776306449">
