@@ -139,5 +139,6 @@ if __name__ == '__main__':
     idx = np.argsort(my_pre)[::-1]
     movies_list = read_movies(path3)
 
-    for i in range(10):
-        print('Predicting rating: %0.1f, movie: %s.' % (my_pre[idx[i]], movies_list[idx[i]]))
+    result = [[my_pre[idx[i]], movies_list[idx[i]]] for i in range(10)]
+    df_rc_movies = pd.DataFrame(result, columns=['Predict Rating', 'Movie'])
+    print(df_rc_movies)
