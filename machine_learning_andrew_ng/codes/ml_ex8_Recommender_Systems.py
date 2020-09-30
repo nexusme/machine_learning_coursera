@@ -1,3 +1,5 @@
+import csv
+
 import pandas as pd
 import scipy
 import sklearn
@@ -14,6 +16,8 @@ from yaml import serialize
 path1 = '../files/ex8_movies.mat'
 
 path2 = '../files/ex8_movieParams.mat'
+
+path3 = '../files/movie_ids.txt'
 
 
 def read_data(path):
@@ -61,6 +65,27 @@ def cofi_gradient(params, Y_in, R_in, num_features_in, lambda_in):
     return np.concatenate((grad_x.flatten(), grad_theta.flatten()), axis=0)
 
 
+def normalize_rating(Y_in, R_in):
+    m, n = Y_in.shape
+    Ymean = np.zeros([m, 1])
+    Ynorm = np.zeros([m, n])
+    for i in range(m):
+        idX = [j for j in range(len(R_in[i, :])) if R_in[i, :][j] == 1]
+        Ymean[i] = np.mean(Y_in[i, idX])
+        Ynorm[i, idX] = Y_in[i, idX] - Ymean[i]
+    return Ymean, Ynorm
+
+
+def read_movies(path):
+    f = open(path, "r", encoding="ISO-8859-1")
+    movies = []
+    for line in f.readlines():
+        movies.append(line.split(' ', 1)[-1][:-1])
+    return movies
+    # df = pd.DataFrame(save_list, columns=columns)
+    # return df
+
+
 if __name__ == '__main__':
     Y, R = read_data(path1)  # Y评分表: 1682*943 R用户是否评分: 1682x943
     X, theta, num_users, num_movies, num_features = read_para(path2)
@@ -98,7 +123,21 @@ if __name__ == '__main__':
     theta_new = np.random.random(size=(nu[0][0], num_features[0][0]))
     para = np.concatenate((np.random.random((num_movies[0][0], num_features[0][0])),
                            np.random.random((nu[0][0], num_features[0][0]))))
-    res = minimize(fun=cofi_cost, x0=para, args=(Y, R, num_features, 10), method='TNC',
+
+    Y_mean, Y_norm = normalize_rating(Y, R)
+
+    res = minimize(fun=cofi_cost, x0=para, args=(Y_norm, R, num_features, 10), method='TNC',
                    jac=cofi_gradient)
 
-    print(res)
+    trained_X = res.x[:num_movies[0][0] * num_features[0][0]].reshape(num_movies[0][0], num_features[0][0])  # 训练好的X
+
+    trained_theta = res.x[num_movies[0][0] * num_features[0][0]:].reshape(nu[0][0], num_features[0][0])  # 训练好的theta
+
+    predict = trained_X @ trained_theta.T  # 预测值
+
+    my_pre = predict[:, -1] + Y_mean.flatten()
+    idx = np.argsort(my_pre)[::-1]
+    movies_list = read_movies(path3)
+
+    for i in range(10):
+        print('Predicting rating: %0.1f, movie: %s.' % (my_pre[idx[i]], movies_list[idx[i]]))
